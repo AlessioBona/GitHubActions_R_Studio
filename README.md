@@ -1,7 +1,3 @@
----
-output: rmarkdown::github_document
----
-
 # Readme
 
 This file is a test project for using github actions within an R-Project.
