@@ -1,4 +1,4 @@
 library(testthat)
-library(GitHubActions_R_Studio)
+library(here)
 
-test_check("GitHubActions_R_Studio")
+test_dir(here("tests/testthat/"))
