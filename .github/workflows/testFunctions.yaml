@@ -1,0 +1,24 @@
+on: 
+  push:
+    paths:
+      - addition.R
+      - multiplication.R
+
+name: R-test-functions
+
+jobs:
+  R_test_functions:
+    name: R test functions
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Setup R
+        uses: r-lib/actions/setup-r@master
+      - name: Install dependencies
+        run: |
+          install.packages(c("testthat", "here"))
+        shell: Rscript {0}
+      - name: Test my functions
+        run: here::here("tests/testthat.R")
+        shell: Rscript {0}
