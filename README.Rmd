@@ -16,3 +16,5 @@ The testthat.R specifies the directory with tests and is called within my workfl
 
 All github actions workflows are in ./github/workflows
 
+Does it work?
+
