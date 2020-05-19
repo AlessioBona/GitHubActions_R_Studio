@@ -1,3 +1,9 @@
+<!-- badges: start -->
+
+[![R build
+status](https://github.com/selinaZitrone/GitHubActions_R_Studio/workflows/testMyFunctions/badge.svg)](https://github.com/selinaZitrone/GitHubActions_R_Studio/actions)
+<!-- badges: end -->
+
 Readme
 ======
 
