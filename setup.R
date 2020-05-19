@@ -9,6 +9,10 @@ usethis::use_github()
 usethis::use_github_actions()
 
 #usethis::use_github_actions_badge(name = "R-CMD-check")
-
+# create a github action that renders your Readme.Rmd
+use_github_action('render-readme.yaml')
 # create a folder with tests using testthat package
 usethis::use_testthat()
+
+# create a badge for your readme:
+usethis::use_github_actions_badge(name = "testMyFunctions")
